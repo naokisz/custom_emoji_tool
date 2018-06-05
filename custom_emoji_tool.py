@@ -15,7 +15,7 @@ emoji_data = ret.json()
 if "--count" in args:
 	print("\n" + str(len(emoji_data)))
 
-if "--no_br" in args:
+if "--no-br" in args:
 	print("\n", end="")
 	for i in emoji_data:
 		print(":" + i["shortcode"] + ": ", end="")
